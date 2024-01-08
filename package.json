@@ -4,15 +4,15 @@
   "description": "my first package",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "release": "release-it"
   },
   "jest": {
     "moduleFileExtensions": [
       "js",
       "jsx",
       "json",
-      "ts",
-      "tsx"
+      "ts"
     ]
   },
   "author": "Tom Tamen",
@@ -24,7 +24,13 @@
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.7",
     "babel-jest": "^29.7.0",
-    "eslint": "^8.56.0"
+    "eslint": "^8.56.0",
+    "release-it": "^17.0.1"
   },
-  "type": "module"
+  "type": "module",
+  "release-it": {
+    "github": {
+      "release": true
+    }
+  }
 }
